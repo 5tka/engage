@@ -1,0 +1,354 @@
+section.split.section
+	// Container Starts
+	.container
+		.row
+			.col-md-4.col-sm-6.col-xs-12.wow.animated.fadeInLeft.animated(data-wow-delay='.3s', style='visibility: visible;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;')
+				.images
+					img(src='img/plain-why-choose-us-2.png', alt='')
+			.col-md-8.col-sm-6.col-xs-12.wow.animated.fadeInRight.animated(data-wow-delay='.3s', style='visibility: visible;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;')
+				.content-inner
+					h2.title BUILT-WITH BOOTSTRAP4, A NEW EXPRIENCE
+					p.lead
+						| We Crafted an awesome design library that is robust and intuitive to use. No matter you're building a business presentation websit or a complex web application our design blocks can easily be adapted for your needs.
+					.details-list
+						.row
+							.col-sm-6.col-xs-12
+								h3 Minimal Coding
+								p
+									| The design blocks come with ready to use HTML colde which makes the design kit suitable for developers and designers of all skill levels.
+							.col-sm-6.col-xs-12
+								h3 Responsive
+								p
+									| Your website will look good on any device. Each design block has been individually tested on desktop. tablets and smartphones.
+	// Container Ends
+// About Us Section Ends
+// Other Services Section
+section#service-block-main.section
+	// Container Starts
+	.container
+		.row
+			h1.section-title.wow.fadeIn.animated.animated(data-wow-delay='.2s', style='visibility: visible;-webkit-animation-delay: .2s; -moz-animation-delay: .2s; animation-delay: .2s;')
+				| WHY CHOOSE US?
+			p.section-subcontent
+				| At vero eos et accusamus et iusto odio dignissimos ducimus qui
+				br
+				|  blanditiis praesentium
+			.col-sm-6.col-md-3
+				// Service-Block-1 Item Starts
+				.service-item.wow.fadeInUpQuick.animated.animated(data-wow-delay='.5s', style='visibility: visible;-webkit-animation-delay: .5s; -moz-animation-delay: .5s; animation-delay: .5s;')
+					.icon-wrapper
+						i.icon-layers.pulse-shrink
+					h2
+						| 40+ Pages
+					p
+						| Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
+				// Service-Block-1 Item Ends
+			.col-sm-6.col-md-3
+				// Service-Block-1 Item Starts
+				.service-item.wow.fadeInUpQuick.animated.animated(data-wow-delay='.8s', style='visibility: visible;-webkit-animation-delay: .8s; -moz-animation-delay: .8s; animation-delay: .8s;')
+					.icon-wrapper
+						i.icon-settings.pulse-shrink
+					h2
+						| Bootstrap4 and HTML5
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
+				// Service-Block-1 Item Ends
+			.col-sm-6.col-md-3
+				// Service-Block-1 Item Starts
+				.service-item.wow.fadeInUpQuick.animated.animated(data-wow-delay='1.1s', style='visibility: visible;-webkit-animation-delay: 1.1s; -moz-animation-delay: 1.1s; animation-delay: 1.1s;')
+					.icon-wrapper
+						i.icon-energy.pulse-shrink
+					h2
+						| Refreshing Design
+					p
+						| Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
+				// Service-Block-1 Item Ends
+			.col-sm-6.col-md-3
+				// Service-Block-1 Item Starts
+				.service-item.wow.fadeInUpQuick.animated.animated(data-wow-delay='1.4s', style='visibility: visible;-webkit-animation-delay: 1.4s; -moz-animation-delay: 1.4s; animation-delay: 1.4s;')
+					.icon-wrapper
+						i.icon-cup.pulse-shrink
+					h2
+						| Crafted Carefully
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
+			// Service-Block-1 Item Ends
+	// Container Ends
+// Service Main Section Ends
+// About Us Section Start
+section#portfolio.section
+	// Container Starts
+	.container
+		.row
+			h1.section-title.wow.fadeInUpQuick(data-wow-delay='.3s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;')
+				| OUR PROFESSIONAL WORK
+			p.section-subcontent.wow.fadeInUpQuick(data-wow-delay='.4s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .4s; -moz-animation-delay: .4s; animation-delay: .4s;')
+				| At vero eos et accusamus et iusto odio dignissimos ducimus qui
+				br
+				|  blanditiis praesentium
+			// Portfolio Controller/Buttons
+			.controls.text-center.wow.fadeInUpQuick(data-wow-delay='.6s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .6s; -moz-animation-delay: .6s; animation-delay: .6s;')
+				a.filter.btn.btn-common.active(data-filter='all')
+					| All
+				a.filter.btn.btn-common(data-filter='.branding')
+					| Branding
+				a.filter.btn.btn-common(data-filter='.marketing')
+					| Marketing
+				a.filter.btn.btn-common(data-filter='.planning')
+					| Planning
+				a.filter.btn.btn-common(data-filter='.research')
+					| Research
+			// Portfolio Controller/Buttons Ends
+			// Portfolio Recent Projects
+			#portfolio-list.wow.fadeInUpQuick(data-wow-delay='.8s', style='visibility: hidden; animation-name: none; animation-delay: 0.8s;')
+				.col-md-4.col-lg-4.col-sm-6.col-xs-12.mix.marketing.planning(style='display: inline-block;', data-bound='')
+					.portfolio-item
+						.portfolio-img
+							img(src='img/img1.jpg', alt='')
+						.portfoli-content
+							.sup-desc-wrap
+								.sup-desc-inner
+									.sup-link
+										a.left-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-link
+										a.right-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-heart
+									.sup-meta-wrap
+										a.sup-title(href='http://demo.graygrids.com/themes/engage/#')
+											h4 TITLE HERE
+										p.sup-description
+											| At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				.col-md-4.col-lg-4.col-sm-6.col-xs-12.mix.branding.planning(style='display: inline-block;', data-bound='')
+					.portfolio-item
+						.portfolio-img
+							img(src='img/img2.jpg', alt='')
+						.portfoli-content
+							.sup-desc-wrap
+								.sup-desc-inner
+									.sup-link
+										a.left-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-link
+										a.right-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-heart
+									.sup-meta-wrap
+										a.sup-title(href='http://demo.graygrids.com/themes/engage/#')
+											h4 TITLE HERE
+										p.sup-description
+											| At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				.col-md-4.col-lg-4.col-sm-6.col-xs-12.mix.branding.research(style='display: inline-block;', data-bound='')
+					.portfolio-item
+						.portfolio-img
+							img(src='img/img3.jpg', alt='')
+						.portfoli-content
+							.sup-desc-wrap
+								.sup-desc-inner
+									.sup-link
+										a.left-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-link
+										a.right-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-heart
+									.sup-meta-wrap
+										a.sup-title(href='http://demo.graygrids.com/themes/engage/#')
+											h4 TITLE HERE
+										p.sup-description
+											| At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				.col-md-4.col-lg-4.col-sm-6.col-xs-12.mix.marketing.research(style='display: inline-block;', data-bound='')
+					.portfolio-item
+						.portfolio-img
+							img(src='img/img4.jpg', alt='')
+						.portfoli-content
+							.sup-desc-wrap
+								.sup-desc-inner
+									.sup-link
+										a.left-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-link
+										a.right-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-heart
+									.sup-meta-wrap
+										a.sup-title(href='http://demo.graygrids.com/themes/engage/#')
+											h4 TITLE HERE
+										p.sup-description
+											| At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				.col-md-4.col-lg-4.col-sm-6.col-xs-12.mix.marketing.planning(style='display: inline-block;', data-bound='')
+					.portfolio-item
+						.portfolio-img
+							img(src='img/img5.jpg', alt='')
+						.portfoli-content
+							.sup-desc-wrap
+								.sup-desc-inner
+									.sup-link
+										a.left-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-link
+										a.right-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-heart
+									.sup-meta-wrap
+										a.sup-title(href='http://demo.graygrids.com/themes/engage/#')
+											h4 TITLE HERE
+										p.sup-description
+											| At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				.col-md-4.col-lg-4.col-sm-6.col-xs-12.mix.planning.research(style='display: inline-block;', data-bound='')
+					.portfolio-item
+						.portfolio-img
+							img(src='img/img6.jpg', alt='')
+						.portfoli-content
+							.sup-desc-wrap
+								.sup-desc-inner
+									.sup-link
+										a.left-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-link
+										a.right-link(href='http://demo.graygrids.com/themes/engage/#')
+											i.icon-heart
+									.sup-meta-wrap
+										a.sup-title(href='http://demo.graygrids.com/themes/engage/#')
+											h4 TITLE HERE
+										p.sup-description
+											| At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+			// End Portfolio Recent Projects
+			.loadmore-button.wow.fadeInUpQuick(data-wow-delay='.6s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .6s; -moz-animation-delay: .6s; animation-delay: .6s;')
+				a.btn.btn-common(href='http://demo.graygrids.com/themes/engage/#')
+					i.fa.fa-arrows
+					|  Show More
+	// Container Ends
+// Portfolio Section Ends
+// Featured Section Starts
+section#featured.section
+	// Container Starts
+	.container
+		.row
+			h1.section-title.wow.fadeInUpQuick(style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;')
+				| CORE FEATURES
+			p.section-subcontent
+				| At vero eos et accusamus et iusto odio dignissimos ducimus qui
+				br
+				|  blanditiis praesentium
+			// Start Service Icon 1
+			.col-md-4.col-sm-6(data-animation='fadeIn', data-animation-delay='01')
+				.featured-box
+					.featured-icon
+						i.icon-present
+					.featured-content
+						h4
+							| Tons of shortcodes
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+			// End featured Icon 1
+			// Start featured Icon 1
+			.col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.2s', data-animation='fadeIn', data-animation-delay='01', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .2s; -moz-animation-delay: .2s; animation-delay: .2s;')
+				.featured-box
+					.featured-icon
+						i.icon-rocket
+					.featured-content
+						h4
+							| Endless posibilites
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+			// End featured Icon 1
+			// Start featured Icon 1
+			.col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.3s', data-animation='fadeIn', data-animation-delay='01', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;')
+				.featured-box
+					.featured-icon
+						i.icon-pencil
+					.featured-content
+						h4
+							| 24/7 Support
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+			// End featured Icon 1
+			// Start featured Icon 1
+			.col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.4s', data-animation='fadeIn', data-animation-delay='01', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .4s; -moz-animation-delay: .4s; animation-delay: .4s;')
+				.featured-box
+					.featured-icon
+						i.icon-diamond.icon-large.icon-effect
+					.featured-content
+						h4
+							| Great Ideas
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+			// End featured Icon 1
+			// Start featured Icon 1
+			.col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.5s', data-animation='fadeIn', data-animation-delay='01', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .5s; -moz-animation-delay: .5s; animation-delay: .5s;')
+				.featured-box
+					.featured-icon
+						i.icon-settings
+					.featured-content
+						h4
+							| Perfect Coding
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+			// End featured Icon 1
+			// Start featured Icon 1
+			.col-md-4.col-sm-6.wow.fadeInUpQuick(data-wow-delay='.6s', data-animation='fadeIn', data-animation-delay='01', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .6s; -moz-animation-delay: .6s; animation-delay: .6s;')
+				.featured-box
+					.featured-icon
+						i.icon-star
+					.featured-content
+						h4
+							| Unique Design
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+			// End featured Icon 1
+	// Container Ends
+// Featured Section Ends
+// Pricing Table Section
+section#cool-facts.section
+	// Container Starts
+	.container
+		// Row Starts
+		.row
+			h1.section-title.wow.fadeInUpQuick(style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;')
+				| AWESOME NUMBER FACTS
+			p.section-subcontent
+				| At vero eos et accusamus et iusto odio dignissimos ducimus qui
+				br
+				|  blanditiis praesentium
+			.col-sm-6.col-md-3.col-lg-3
+				// Fact Block Starts
+				.fact-block.clearfix.wow.fadeInUp(data-wow-delay='.3s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;')
+					.facts-item
+						i.icon-trophy
+						.fact-count
+							h3
+								span.counter 12
+							h4 Awards won
+				// Fact Block Ends
+			.col-sm-6.col-md-3.col-lg-3
+				// Fact Block Starts
+				.fact-block.clearfix.wow.fadeInUp(data-wow-delay='.8s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .8s; -moz-animation-delay: .8s; animation-delay: .8s;')
+					.facts-item
+						i.icon-heart
+						.fact-count
+							h3
+								span.counter 125
+							h4 Happy clients
+				// Fact Block Ends
+			.col-sm-6.col-md-3.col-lg-3
+				// Fact Block Starts
+				.fact-block.clearfix.wow.fadeInUp(data-wow-delay='1.1s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: 1.1s; -moz-animation-delay: 1.1s; animation-delay: 1.1s;')
+					.facts-item
+						i.icon-ghost
+						.fact-count
+							h3
+								span.counter 40
+							h4 Fun Facts
+				// Fact Block Ends
+			.col-sm-6.col-md-3.col-lg-3
+				// Fact Block Starts
+				.fact-block.clearfix.wow.fadeInUp(data-wow-delay='1.1s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: 1.1s; -moz-animation-delay: 1.1s; animation-delay: 1.1s;')
+					.facts-item
+						i.icon-picture
+						.fact-count
+							h3
+								span.counter 75
+							h4 Exhibitions
+				// Fact Block Ends
+		// Row Ends
+	// Container Ends
+// Cool Facts Section End
+// Testimonial Section
+
+// GOTOVO
+
+a.back-to-top(href='http://demo.graygrids.com/themes/engage/#', style='display: none;')
+	i.fa.fa-angle-up
+.bottom
+	a.settings(href='http://demo.graygrids.com/themes/engage/#')
