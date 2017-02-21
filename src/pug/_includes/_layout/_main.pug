@@ -212,108 +212,110 @@ section#portfolio.section
 // Portfolio Section Ends
 // Featured Section Starts
 
-.construct-block.allready-showed(style='background-image: url("img/bg-5.jpg");')
+section.construct-block.allready-showed(style='background-image: url("img/bg-5.jpg");')
+	.construct-block-title
+		.container
+			.row
+				h1.section-title.wow.fadeInUpQuick(data-wow-delay='.3s', style='visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-delay: .3s; -moz-animation-delay: .3s; animation-delay: .3s;')
+					| БЫСТРЫЙ РАСЧЕТ СТОИМОСТИ
 	.constr
 		.inconstructor
 			form(action='order.php', method='post')
 				.step1
-					h4 1. Сколько камер вы планируете установить?
-					table.constructor.grey-color
-						tbody
-							tr
-								td(width='25%')
-									| скрытые
-									.inputBoxDiv(style='width: 44.4px;')
-										input.inputBox(name='hid_cam', type='text', value='1')
-										i.inputplusone ▲
-										i.inputminusone ▼
-								td(width='25%')
-									| уличные
-									.inputBoxDiv(style='width: 44.4px;')
-										input.inputBox(name='out_cam', type='text', value='1')
-										i.inputplusone ▲
-										i.inputminusone ▼
-								td(width='25%')
-									| внутренние
-									.inputBoxDiv(style='width: 44.4px;')
-										input.inputBox(name='inn_cam', type='text', value='1')
-										i.inputplusone ▲
-										i.inputminusone ▼
-								td(width='25%')
-									| поворотные
-									.inputBoxDiv(style='width: 44.4px;')
-										input.inputBox(name='rot_cam', type='text', value='1')
-										i.inputplusone ▲
-										i.inputminusone ▼
-					h4 2. Какую систему видеонаблюдения вы хотите использовать?
-					table.constructor
-						tbody
-							tr
-								td(colspan='2')
-									label.radio
-										input(type='radio', name='sys_type', value='Цифровая')
-										| 									Цифровую
-										label
-								td(colspan='2')
-									label.radio
-										input(type='radio', name='sys_type', value='Аналоговая')
-										| 									Аналоговую (AHD)
-										label
-					h4 3. Тип видео
-					table.constructor.no-padding
-						tbody
-							tr
-								td
-									label.radio
-										input(type='radio', name='vid_type', value='Эконом')
-										| 									Эконом (обзорная система слежения)
-										label
-							tr
-								td
-									label.radio
-										input(type='radio', name='vid_type', value='Стандарт')
-										| 									Стандарт (несколько обзорных камер и камеры с узконаправленной фокусировкой)
-										label
-							tr
-								td
-									label.radio
-										input(type='radio', name='vid_type', value='Профи')
-										| 									Профи (камеры HD с высоким разрешением и цветопередачей)
-										label
-					h4 4. Архив записи
-					table.constructor
-						tbody
-							tr
-								td(colspan='2', width='33%')
-									label.radio
-										input(type='radio', name='rec_archive', value='до 30 дней')
-										| 									До 30 дней
-										label
-								td(width='34%')
-									label.radio
-										input(type='radio', name='rec_archive', value='до 60 дней')
-										| 									До 60 дней
-										label
-								td(width='33%')
-									label.radio
-										input(type='radio', name='rec_archive', value='более 60 дней')
-										| 									Более 60 дней
-										label
-					h4 5. Как вы планируете осуществлять монтаж системы?
-					table.constructor
-						tbody
-							tr
-								td(colspan='2')
-									label.radio
-										input(type='radio', name='sys_montag', value='Специалисты')
-										| 									Установка специалистами "Наблюдатель"
-										label
-								td(colspan='2')
-									label.radio
-										input(type='radio', name='sys_montag', value='Самостоятельно')
-										| 									Своими силами
-										label
-					.but.gotostep2(style='margin-top: 20px;') Рассчитать
+					.line-constr.wow.fadeInLeft
+						h4 1. Сколько камер вы планируете установить?
+						table.constructor.grey-color
+							tbody
+								tr
+									td(width='25%')
+										| скрытые
+										.inputBoxDiv(style='width: 44.4px;')
+											input.inputBox.spinner(name='hid_cam', type='text', value='1')
+									td(width='25%')
+										| уличные
+										.inputBoxDiv(style='width: 44.4px;')
+											input.inputBox.spinner(name='out_cam', type='text', value='1')
+									td(width='25%')
+										| внутренние
+										.inputBoxDiv(style='width: 44.4px;')
+											input.inputBox.spinner(name='inn_cam', type='text', value='1')
+									td(width='25%')
+										| поворотные
+										.inputBoxDiv(style='width: 44.4px;')
+											input.inputBox.spinner(name='rot_cam', type='text', value='1')
+					.line-constr.wow.fadeInLeft
+						h4 2. Какую систему видеонаблюдения вы хотите использовать?
+						table.constructor
+							tbody
+								tr
+									td(colspan='2')
+										label.radio
+											input(type='radio', name='sys_type', value='Цифровая')
+											|Цифровую
+											b.fa
+									td(colspan='2')
+										label.radio
+											input(type='radio', name='sys_type', value='Аналоговая')
+											|Аналоговую (AHD)
+											b.fa
+					.line-constr.wow.fadeInLeft
+						h4 3. Тип видео
+						table.constructor.no-padding
+							tbody
+								tr
+									td
+										label.radio
+											input(type='radio', name='vid_type', value='Эконом')
+											|Эконом (обзорная система слежения)
+											b.fa
+								tr
+									td
+										label.radio
+											input(type='radio', name='vid_type', value='Стандарт')
+											|Стандарт (несколько обзорных камер и камеры с узконаправленной фокусировкой)
+											b.fa
+								tr
+									td
+										label.radio
+											input(type='radio', name='vid_type', value='Профи')
+											|Профи (камеры HD с высоким разрешением и цветопередачей)
+											b.fa
+					.line-constr.wow.fadeInLeft
+						h4 4. Архив записи
+						table.constructor
+							tbody
+								tr
+									td(colspan='2', width='33%')
+										label.radio
+											input(type='radio', name='rec_archive', value='до 30 дней')
+											|До 30 дней
+											b.fa
+									td(width='34%')
+										label.radio
+											input(type='radio', name='rec_archive', value='до 60 дней')
+											|До 60 дней
+											b.fa
+									td(width='33%')
+										label.radio
+											input(type='radio', name='rec_archive', value='более 60 дней')
+											|Более 60 дней
+											b.fa
+					.line-constr.wow.fadeInLeft
+						h4 5. Как вы планируете осуществлять монтаж системы?
+						table.constructor
+							tbody
+								tr
+									td(colspan='2')
+										label.radio
+											input(type='radio', name='sys_montag', value='Специалисты')
+											|Установка специалистами "Наблюдатель"
+											b.fa
+									td(colspan='2')
+										label.radio
+											input(type='radio', name='sys_montag', value='Самостоятельно')
+											|Своими силами
+											b.fa
+					.but.gotostep2.wow.fadeInLeft Рассчитать
 				// .step1
 				.step2
 					h3

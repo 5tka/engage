@@ -4,7 +4,7 @@ console.log('hello from script.js');
 $(".dropdown").hover(
   function () {
     $(this).addClass('open');
-  }, 
+  },
   function () {
     $(this).removeClass('open');
   }
@@ -131,7 +131,7 @@ $("#image-carousel").owlCarousel({
   items : 4,
   itemsDesktop : [1170,3],
   itemsDesktopSmall : [1170,3]
- 
+
 });
 
 // Slider Carousel
@@ -148,7 +148,7 @@ $("#carousel-image-slider").owlCarousel({
  //About owl carousel Slider
   $(document).ready(function(){
     /*=== About us ====*/
-    $('#carousel-about-us').owlCarousel({   
+    $('#carousel-about-us').owlCarousel({
         navigation: true, // Show next and prev buttons
         navigationText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
         slideSpeed: 800,
@@ -164,6 +164,24 @@ $("#carousel-image-slider").owlCarousel({
         itemsTabletSmall: false,
         itemsMobile : [479,1],
     });
+
+
+    $( ".spinner" ).spinner({
+      min: 0,
+      spin: function( event, ui ) {
+        if ( ui.value < 0 ) {
+          $( this ).spinner( "value", 1 );
+          return false;
+        }
+      },
+      change: function (event, ui) {
+          $(this).val( parseInt($(this).val()));
+          if ($(this).val()<=0) {
+              $(this).val('1')
+          };
+      }
+    });
+
 
 });
 
