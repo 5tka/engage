@@ -3379,6 +3379,12 @@ Copyright (c) 2014 Daniel Eden
           animation-name: bounceOutLeft;
 }
 
+@media screen and (max-width: 767px) {
+  .split .images img {
+    width: auto;
+    max-height: 200px;
+  }
+}
 @-webkit-keyframes bounceOutRight {
   20% {
     opacity: 1;
@@ -6656,7 +6662,7 @@ h2.widget-title {
     display: none;
   }
   #service-block-main .service-item {
-    margin: 60px 0;
+    margin: 20px 0;
   }
   #service-block-main .service-item h2 {
     font-size: 24px;
@@ -6715,7 +6721,7 @@ h2.widget-title {
     margin: 30px 0;
   }
   #cool-facts .fact-block {
-    margin: 30px 0;
+    margin: 0;
   }
   #testimonial #testimonial-carousel p {
     font-size: 20px;

@@ -65,7 +65,7 @@ input[type="text"]:focus {
 /* TABS */
 
 .construct-block-title {
-	padding: 40px 0;
+	padding: 40px 0 20px;
 	background-color: #fff;
 }
 .construct-block {
@@ -86,8 +86,13 @@ input[type="text"]:focus {
     .step1 {margin-left: 10px;}
 }
 @media (max-width: 767px) {
-    .constr {width: 100%;}
+    .constr {width: 100%;
+    	padding-bottom: 10px;}
     .step1 {margin-left: 10px;}
+    .construct-block {
+    	background-size: cover;
+    	padding-bottom: 10px;
+    }
 }
 
 .inconstructor {
@@ -99,8 +104,11 @@ input[type="text"]:focus {
 	overflow: hidden;
 }
 @media (max-width:479px) {
-    .inconstructor {height: 900px;margin: 10px;}
+    .inconstructor {height: auto;margin: 10px;}
     .constructor td {font-size: 14px;}
+    .construct-block-title {
+    	padding: 0;
+    }
 }
 @media (max-width: 965px) {
     .inconstructor {float: none;margin-left: 10px;}
@@ -275,5 +283,11 @@ label.radio {
 		&:hover {
 			background-color: #f60;
 		}
+	}
+}
+
+@media (max-width: 500px) {
+	.inconstructor {
+		max-width: initial;
 	}
 }
