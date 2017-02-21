@@ -47,7 +47,7 @@ var path = {
         scss: ["./src/sass/**/*.scss",'./src/sass/_*.scss'],
         img: './src/img/**/*',
         favicon: './src/favicon/*',
-        fonts: './src/fonts/*'
+        fonts: './src/fonts/**/**'
     }
 };
 
@@ -137,8 +137,8 @@ gulp.task('js-vendor', function(){
   return gulp.src(path.src.jsVendor)
   .pipe(plumber())
   // .pipe(rigger())
+  // .pipe(concat('vendor.js'))
   .pipe(uglify())
-  .pipe(concat('vendor.js'))
   .pipe(gulp.dest(path.build.jsVendor))
   .pipe(browserSync.stream());
 });
