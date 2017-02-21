@@ -9,79 +9,25 @@ header#header-wrap
 				button.navbar-toggler.hidden-md-up.pull-xs-right(data-target='#main-menu', data-toggle='collapse', type='button')
 					| ☰
 				// Brand
-				a.navbar-brand(href='http://demo.graygrids.com/themes/engage/index.html')
+				a.navbar-brand(href='#')
 					img(src='img/logo.png', alt='')
 				#main-menu.collapse.navbar-toggleable-sm.pull-xs-left.pull-md-right
 					// Navbar Starts
 					ul.nav.nav-inline
 						li.nav-item.dropdown
-							a.nav-link.active(href='http://demo.graygrids.com/themes/engage/index.html', role='button', aria-haspopup='true', aria-expanded='false') Home
+							a.nav-link.active(href='#', role='button', aria-haspopup='true', aria-expanded='false') Готовые системы
 						li.nav-item.dropdown
-							a.nav-link.dropdown-toggle(data-toggle='dropdown', href='http://demo.graygrids.com/themes/engage/#', role='button', aria-haspopup='true', aria-expanded='false')
-								| Pages
-							.dropdown-menu
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/about-us.html') About Us
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/about-us2.html') About Us 2
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/team-page.html') Team Members
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/services.html') Services
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/service2.html') Services 2
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/contact1.html') Contact Us
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/contact1.html') Contact Us 2
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/pricing.html') Pricing
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/404.html') 404
+							a.nav-link(href='#', role='button', aria-haspopup='true', aria-expanded='false') Калькулятор
 						li.nav-item.dropdown
-							a.nav-link.dropdown-toggle(data-toggle='dropdown', href='http://demo.graygrids.com/themes/engage/#', role='button', aria-haspopup='true', aria-expanded='false')
-								| Shortcodes
-							.dropdown-menu
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/accordions.html') Accordions
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/tabs.html') Tabs
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/buttons.html') Buttons
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/skills.html') Progress Bars
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/testimonials.html') Testimonials
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/clients.html') Clients
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/icon.html') Icon Boxes
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/team.html') Team
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/carousel.html') Carousel
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/maps.html') Google Maps
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/pricing.html') Pricing tables
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/notification.html') Notification
-						li.nav-item.dropdown
-							a.nav-link.dropdown-toggle(data-toggle='dropdown', href='http://demo.graygrids.com/themes/engage/#', role='button', aria-haspopup='true', aria-expanded='false')
-								| Portfolio
-							.dropdown-menu
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/portfolio-col-2.html') Portfolio 2 Columns
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/portfolio-col-3.html') Portfolio 3 Columns
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/portfolio-col-4.html') Portfolio 4 Columns
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/portfolio-item.html') Portfolio Single
-						li.nav-item.dropdown
-							a.nav-link.dropdown-toggle(data-toggle='dropdown', href='http://demo.graygrids.com/themes/engage/#', role='button', aria-haspopup='true', aria-expanded='false')
-								| Blog
-							.dropdown-menu
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/sidebar-right.html') Sidebar Right
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/sidebar-left.html') Sidebar Left
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/sidebar-full.html') Full Width
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/blog-single.html') Single Post
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/blog-grids.html') Blog Grids
-						li.nav-item.dropdown
-							a.nav-link.dropdown-toggle(data-toggle='dropdown', href='http://demo.graygrids.com/themes/engage/#', role='button', aria-haspopup='true', aria-expanded='false')
-								| Contact Us
-							.dropdown-menu
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/contact1.html') Contact us 1
-								a.dropdown-item(href='http://demo.graygrids.com/themes/engage/contact2.html') Contact us 2
-						// Search in right of nav
-						li.nav-item
-							form.top_search.clearfix
-								.top_search_con
-									input.s(placeholder='Search Here ...', type='text')
-									span.top_search_icon
-										i.icon-magnifier
-									input.top_search_submit(type='submit')
-						// Search Ends
+							a.nav-link(href='#', role='button', aria-haspopup='true', aria-expanded='false') Контакты
+						a.btn.btn-lg.btn-common(href='tel:88005504460')
+							i.fa.fa-phone(aria-hidden='true')
+							|Заказать звонок						
 				// Form for navbar search area
 				form.full-search
 					.container
 						input(type='text', placeholder='Type to Search')
-						a.close-search(href='http://demo.graygrids.com/themes/engage/#')
+						a.close-search(href='#')
 							span.fa.fa-times.fa-2x
 				// Search form ends
 		// Navbar Ends
@@ -98,34 +44,38 @@ header#header-wrap
 					img(src='img/bg-1.jpg', alt='First slide')
 					.carousel-caption
 						h2
-							| Built-with Bootstrap 4
-						h3 At vero eos et accusamus et iusto odio dignissimos ducimus qui
-						a.btn.btn-lg.btn-common(href='http://demo.graygrids.com/themes/engage/#')
+							| Установка незаметных систем видеонаблюдения 
+						h3
+							| Готовые решения для частных и промышленных объектов в цифровом и аналоговом вариантах <br>
+							| Узнайте точную стоимость системы - инженер составит смету во время бесплатного выезда на ваш объект
+						a.btn.btn-lg.btn-common(href='#')
 							i.fa.fa-download
-							|                 Purchase
+							|Вызвать инженера
 				.carousel-item
 					img(src='img/bg-2.jpg', alt='Second slide')
 					.carousel-caption
 						h2
-							| Multi-purpose Template
+							| Установка незаметных систем видеонаблюдения 
 						h3
-							| At vero eos et accusamus et iusto odio dignissimos ducimus qui
-						a.btn.btn-common.btn-lg(href='http://demo.graygrids.com/themes/engage/#')
+							| Готовые решения для частных и промышленных объектов в цифровом и аналоговом вариантах <br>
+							| Узнайте точную стоимость системы - инженер составит смету во время бесплатного выезда на ваш объект
+						a.btn.btn-common.btn-lg(href='#')
 							i.fa.fa-coffee
-							|                 Learn More
+							|Вызвать инженера
 				.carousel-item.active
 					img(src='img/bg-3.jpg', alt='Second slide')
 					.carousel-caption
 						h2
-							| Refreshing Cool Design
+							| Установка незаметных систем видеонаблюдения 
 						h3
-							| At vero eos et accusamus et iusto odio dignissimos ducimus qui
-						a.btn.btn-common.btn-lg(href='http://demo.graygrids.com/themes/engage/#')
+							| Готовые решения для частных и промышленных объектов в цифровом и аналоговом вариантах <br>
+							| Узнайте точную стоимость системы - инженер составит смету во время бесплатного выезда на ваш объект
+						a.btn.btn-common.btn-lg(href='#')
 							i.fa.fa-download
-							|                 Download
-			a.left.carousel-control.nav-prev(href='http://demo.graygrids.com/themes/engage/#carousel-slider', role='button', data-slide='prev')
+							| Вызвать инженера
+			a.left.carousel-control.nav-prev(href='#carousel-slider', role='button', data-slide='prev')
 				span.sr-only Previous
-			a.right.carousel-control.nav-next(href='http://demo.graygrids.com/themes/engage/#carousel-slider', role='button', data-slide='next')
+			a.right.carousel-control.nav-next(href='#carousel-slider', role='button', data-slide='next')
 				span.sr-only Next
 	// Main Carousel Section End
 // Header-wrap Section End
