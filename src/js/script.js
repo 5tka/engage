@@ -59,7 +59,19 @@ $('#clients-scroller').owlCarousel({
     itemsTabletSmall: [480,2],
     itemsMobile : [479,1],
 });
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
 
+      $('.btn-lg').click(function(event) {
+        event.preventDefault();
+        $('.popup-form').bPopup({
+            opacity: 0.65,
+            closeClass: 'icon-close'
+        });
+        return false;
+    })
 //Color Client
 $('#color-client-scroller').owlCarousel({
     items:4,
