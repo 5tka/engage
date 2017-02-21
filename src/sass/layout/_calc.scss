@@ -1,0 +1,227 @@
+table {
+	border-collapse:collapse;
+}
+table td {
+	vertical-align: top;
+}
+
+/*----------H's-------------*/
+h3 {
+	font-weight: normal;
+	margin: 0;
+	font-family: segoe, verdana, arial, tahoma;
+}
+h4 {
+margin: 0;
+}
+.but {
+	background: #15a346;
+	cursor: pointer;
+	height: 33px;
+	line-height: 35px;
+	display: inline-block;
+	padding: 0 32px;
+	font-family: freesetcregular, tahoma, arial;
+	color: #fff;
+	margin-top: 10px;
+}
+.but:hover {
+	background: #17aa49;
+}
+.but:active {
+	background: #118f3c;
+}
+.but::-moz-selection {
+	background: transparent;
+}
+.but::selection {
+	background: transparent;
+}
+input[type="text"]{
+	height: 30px;
+	border: solid 1px #CCC;
+	line-height: 32px;
+	background: #FFF;
+	display: inline-block;
+	width: 200px;
+	text-align: left;
+	outline: none;
+	margin: 10px 8px 0 0;
+	font-family: arial, tahoma, verdana;
+	color: #444;
+	font-size: 12px;
+	vertical-align: top;
+	padding: 0 0 0 8px;
+}
+input[type="text"]:focus {
+	border-color: #15A346;
+}
+/*.closer:active {
+	margin-top: -36px;
+}*/
+
+/* TABS */
+/* TABS */
+.construct-block {
+	width: 100%;
+	height: 780px;
+	/*background: url(../img/icons/bg3.jpg) no-repeat right 0;*/
+	background-repeat: no-repeat;
+	background-position: right 0;
+}
+.constr {
+	width: 50%;
+	background: #fff;
+	float: left;
+}
+@media (max-width: 965px) {
+    .constr {width: 75%;}
+    .step1 {margin-left: 10px;}
+}
+@media (max-width: 767px) {
+    .constr {width: 100%;}
+    .step1 {margin-left: 10px;}
+}
+
+.inconstructor {
+	max-width: 450px;
+	margin: 0 32px 0 0;
+	float: right;
+	height: 790px;
+	padding: 16px 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+@media (max-width:479px) {
+    .inconstructor {height: 900px;margin: 10px;}
+    .constructor td {font-size: 14px;}
+}
+@media (max-width: 965px) {
+    .inconstructor {float: none;margin-left: 10px;}
+}
+.constructor {
+	width: 100%;
+}
+.constructor td {
+	padding: 12px 0 16px 0;
+}
+.inconstructor h4 {
+	margin: 0;
+	padding: 23px 0 0 0;
+	font-size: 16px;
+}
+.no-padding {
+	margin: 0 0 8px 0;
+}
+.no-padding td {
+	padding: 12px 0 0 0;
+}
+.inconstructor input.inputBox {
+	width: 32px;
+	font-size: 16px;
+	text-align: left;
+	padding: 0 20px 0 6px;
+	height: 32px;
+}
+.radio {
+	padding: 0 0 0 32px;
+	background: url(../img/icons/radio.png) no-repeat 0 0;
+	display: inline-block;
+	text-indent: -4px;
+}
+.radio.checked {
+    background-image: url(../img/icons/radio2.png);
+}
+.radio:hover {
+	background: url(../img/icons/radio3.png) no-repeat 0 0;
+}
+input[type="radio"] {
+	width: 1px;
+	opacity: 0;
+	margin: 0 0 0 -1px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+.inputBoxDiv {
+	position: relative;
+	display: block;
+	margin: 6px 0 0 0;
+}
+.inputBoxDiv i {
+	font-style: normal;
+	cursor: pointer;
+	position: absolute;
+	right: -10px;
+	color: #555;
+	background: #fff;
+	height: 10px;
+	line-height: 10px;
+	font-size: 10px;
+	width: 20px;
+	margin-top: 10px;
+	text-align: center;
+	border-left: solid 1px #ddd;
+	-o-transition: 0.2s 0 ease;
+	-moz-transition: 0.2s 0 ease;
+	-webkit-transition: 0.2s 0 ease;
+	transition: 0.2s 0 ease;
+}
+.inputBoxDiv i:hover {
+	background: #15A346;
+	color: #fff;
+}
+.inputBoxDiv i:active {
+	background: #036123;
+	color: #fff;
+}
+.inputBoxDiv i::selection {
+	background: transparent;
+}
+.inputBoxDiv i::-moz-selection {
+	background: transparent;
+}
+.inputBoxDiv:hover input[type="text"] {
+	border-color: #15A346;
+}
+.inputplusone {
+	top: 1px;
+}
+.inputminusone {
+	top: 50%;
+}
+.step2 {
+	display: none;
+	padding: 270px 0 0 0;
+}
+.step2 h3 {
+	font-size: 20px;
+	font-weight: lighter;
+	margin: 0 0 16px 0;
+}
+.step2 input[type="text"] {
+	margin-bottom: 16px;
+}
+.toback {
+	background: #ccc;
+	color: #555;
+}
+.toback:hover {
+	background: #ddd;
+	color: #555;
+}
+.toback:active {
+	background: #bbb;
+	color: #555;
+}
+
+/* darker-timer */
+
+/* darker-timer */
+/*
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius:  6px;
+	-webkit-box-shadow: 0 0 10px #222;
+	-moz-box-shadow: 0 0 10px #222;
+	box-shadow: 0 0 10px #222;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+*/

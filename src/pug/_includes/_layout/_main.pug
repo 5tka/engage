@@ -211,6 +211,121 @@ section#portfolio.section
 	// Container Ends
 // Portfolio Section Ends
 // Featured Section Starts
+
+.construct-block.allready-showed(style='background-image: url("img/bg-5.jpg");')
+	.constr
+		.inconstructor
+			form(action='order.php', method='post')
+				.step1
+					h4 1. Сколько камер вы планируете установить?
+					table.constructor.grey-color
+						tbody
+							tr
+								td(width='25%')
+									| скрытые
+									.inputBoxDiv(style='width: 44.4px;')
+										input.inputBox(name='hid_cam', type='text', value='1')
+										i.inputplusone ▲
+										i.inputminusone ▼
+								td(width='25%')
+									| уличные
+									.inputBoxDiv(style='width: 44.4px;')
+										input.inputBox(name='out_cam', type='text', value='1')
+										i.inputplusone ▲
+										i.inputminusone ▼
+								td(width='25%')
+									| внутренние
+									.inputBoxDiv(style='width: 44.4px;')
+										input.inputBox(name='inn_cam', type='text', value='1')
+										i.inputplusone ▲
+										i.inputminusone ▼
+								td(width='25%')
+									| поворотные
+									.inputBoxDiv(style='width: 44.4px;')
+										input.inputBox(name='rot_cam', type='text', value='1')
+										i.inputplusone ▲
+										i.inputminusone ▼
+					h4 2. Какую систему видеонаблюдения вы хотите использовать?
+					table.constructor
+						tbody
+							tr
+								td(colspan='2')
+									label.radio
+										input(type='radio', name='sys_type', value='Цифровая')
+										| 									Цифровую
+										label
+								td(colspan='2')
+									label.radio
+										input(type='radio', name='sys_type', value='Аналоговая')
+										| 									Аналоговую (AHD)
+										label
+					h4 3. Тип видео
+					table.constructor.no-padding
+						tbody
+							tr
+								td
+									label.radio
+										input(type='radio', name='vid_type', value='Эконом')
+										| 									Эконом (обзорная система слежения)
+										label
+							tr
+								td
+									label.radio
+										input(type='radio', name='vid_type', value='Стандарт')
+										| 									Стандарт (несколько обзорных камер и камеры с узконаправленной фокусировкой)
+										label
+							tr
+								td
+									label.radio
+										input(type='radio', name='vid_type', value='Профи')
+										| 									Профи (камеры HD с высоким разрешением и цветопередачей)
+										label
+					h4 4. Архив записи
+					table.constructor
+						tbody
+							tr
+								td(colspan='2', width='33%')
+									label.radio
+										input(type='radio', name='rec_archive', value='до 30 дней')
+										| 									До 30 дней
+										label
+								td(width='34%')
+									label.radio
+										input(type='radio', name='rec_archive', value='до 60 дней')
+										| 									До 60 дней
+										label
+								td(width='33%')
+									label.radio
+										input(type='radio', name='rec_archive', value='более 60 дней')
+										| 									Более 60 дней
+										label
+					h4 5. Как вы планируете осуществлять монтаж системы?
+					table.constructor
+						tbody
+							tr
+								td(colspan='2')
+									label.radio
+										input(type='radio', name='sys_montag', value='Специалисты')
+										| 									Установка специалистами "Наблюдатель"
+										label
+								td(colspan='2')
+									label.radio
+										input(type='radio', name='sys_montag', value='Самостоятельно')
+										| 									Своими силами
+										label
+					.but.gotostep2(style='margin-top: 20px;') Рассчитать
+				// .step1
+				.step2
+					h3
+						| Введите свои контактные данные, и наши специалисты рассчитают стоимость вашего заказа
+					input(type='text', name='name', placeholder='Введите имя')
+					input(type='text', name='phone', placeholder='Введите телефон')
+					.but.toback(onclick='Lp.stepper();') ← Назад
+					.but.submit Отправить
+				// .step2
+		// .inconstructor
+	// .constr
+
 section#featured.section
 	// Container Starts
 	.container
