@@ -1,5 +1,6 @@
 console.log('hello from script.js');
 
+
 //Dropdown Menus
 $(".dropdown").hover(
   function () {
@@ -159,6 +160,14 @@ $("#carousel-image-slider").owlCarousel({
 
  //About owl carousel Slider
   $(document).ready(function(){
+          $('.nav-inline a[href*="#"]').click(function(e){
+            e = event.preventDefault();
+
+        var id=$(this).attr('href'),
+            position = $(id).offset().top;
+        $('body,html').animate({scrollTop: position}, 1000);
+      });
+
     /*=== About us ====*/
     $('#carousel-about-us').owlCarousel({
         navigation: true, // Show next and prev buttons

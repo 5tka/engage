@@ -2347,7 +2347,7 @@
 
 
 
-@charset "UTF-8";
+// @charset "UTF-8";
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -9353,7 +9353,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 .tp-caption img {
 background: transparent;
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 zoom: 1;
 }
 
@@ -10666,11 +10666,11 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
 /*! jQuery UI - v1.12.1 - 2017-02-21
 * http://jqueryui.com
 * Includes: core.css, button.css, controlgroup.css, checkboxradio.css, spinner.css
 * Copyright jQuery Foundation and other contributors; Licensed MIT */
-
 /* Layout helpers
 ----------------------------------*/
 .ui-helper-hidden {

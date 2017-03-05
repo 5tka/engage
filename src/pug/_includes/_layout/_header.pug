@@ -10,16 +10,16 @@ header#header-wrap
 					| ☰
 				// Brand
 				a.navbar-brand(href='#')
-					img(src='img/logo.png', alt='')
+					img(src='img/logo-m.png', alt='')
 				#main-menu.collapse.navbar-toggleable-sm.pull-xs-left.pull-md-right
 					// Navbar Starts
 					ul.nav.nav-inline
 						li.nav-item.dropdown
-							a.nav-link.active(href='#', role='button', aria-haspopup='true', aria-expanded='false') Готовые системы
+							a.nav-link(href='#portfolio', role='button', aria-haspopup='true', aria-expanded='false') Готовые системы
 						li.nav-item.dropdown
-							a.nav-link(href='#', role='button', aria-haspopup='true', aria-expanded='false') Калькулятор
+							a.nav-link(href='#calc', role='button', aria-haspopup='true', aria-expanded='false') Калькулятор
 						li.nav-item.dropdown
-							a.nav-link(href='#', role='button', aria-haspopup='true', aria-expanded='false') Контакты
+							a.nav-link(href='#footer', role='button', aria-haspopup='true', aria-expanded='false') Контакты
 						a.btn.btn-lg.btn-common(href='tel:88005504460')
 							i.fa.fa-phone(aria-hidden='true')
 							|Заказать звонок						
@@ -35,13 +35,13 @@ header#header-wrap
 	#carousel-area
 		#carousel-slider.carousel.slide(data-ride='carousel')
 			// Indicators
-			ol.carousel-indicators
-				li(data-target='#carousel-slider', data-slide-to='0')
-				li(data-target='#carousel-slider', data-slide-to='1')
-				li.active(data-target='#carousel-slider', data-slide-to='2')
+			//- ol.carousel-indicators
+			//- 	li(data-target='#carousel-slider', data-slide-to='0')
+			//- 	li(data-target='#carousel-slider', data-slide-to='1')
+			//- 	li.active(data-target='#carousel-slider', data-slide-to='2')
 			.carousel-inner(role='listbox')
-				.carousel-item
-					img(src='img/bg-1.jpg', alt='First slide')
+				.carousel-item.active
+					img(src='img/bg-11.jpg', alt='First slide')
 					.carousel-caption
 						h2
 							| Установка незаметных систем видеонаблюдения 
@@ -51,28 +51,6 @@ header#header-wrap
 						a.btn.btn-lg.btn-common(href='#')
 							i.fa.fa-download
 							|Вызвать инженера
-				.carousel-item
-					img(src='img/bg-2.jpg', alt='Second slide')
-					.carousel-caption
-						h2
-							| Установка незаметных систем видеонаблюдения 
-						h3
-							| Готовые решения для частных и промышленных объектов в цифровом и аналоговом вариантах <br>
-							| Узнайте точную стоимость системы - инженер составит смету во время бесплатного выезда на ваш объект
-						a.btn.btn-common.btn-lg(href='#')
-							i.fa.fa-coffee
-							|Вызвать инженера
-				.carousel-item.active
-					img(src='img/bg-3.jpg', alt='Second slide')
-					.carousel-caption
-						h2
-							| Установка незаметных систем видеонаблюдения 
-						h3
-							| Готовые решения для частных и промышленных объектов в цифровом и аналоговом вариантах <br>
-							| Узнайте точную стоимость системы - инженер составит смету во время бесплатного выезда на ваш объект
-						a.btn.btn-common.btn-lg(href='#')
-							i.fa.fa-download
-							| Вызвать инженера
 			a.left.carousel-control.nav-prev(href='#carousel-slider', role='button', data-slide='prev')
 				span.sr-only Previous
 			a.right.carousel-control.nav-next(href='#carousel-slider', role='button', data-slide='next')
