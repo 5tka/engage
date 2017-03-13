@@ -322,6 +322,7 @@ i:hover {
   position: fixed;
   bottom: 18px;
   right: 15px;
+  z-index: 999;  
 }
 .back-to-top i {
   display: block;
@@ -661,7 +662,7 @@ i:hover {
   margin: 10px 20px;
 }
 .navbar-brand {
-  width: 295px;
+  width: 230px;
   padding-top: 1.1rem;
   height: auto;
   img{
@@ -1281,9 +1282,13 @@ ul li > ul > li.active > a {
   text-transform: uppercase;
   font-weight: 300;
 }
+span.bolddd{
+  color: #f43d00;
+  font-size: 18px;
+}
 .sup-desc-wrap .sup-meta-wrap .sup-description {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 16px;
   color: #000;
   text-align: left;
   padding-left: 10px;
@@ -3187,19 +3192,26 @@ ul.contact-info2 i.fa {
   padding: 20px;
   text-align: center;
   color: #fff;
-  width: 480px;
+  max-width: 480px;
+  width: 100%;
   background: #282828;
   button{
     width: 220px;
   }
   .form-control{
     background: #1d1d1d;
+    margin-bottom: 10px;
   }
 }
 /*.controls a.active {
   background: rgba(0, 0, 0, 0.47);
 }*/
 /* Tablet Layout: 768px. */
+@include breakpoint(768){
+    .sup-desc-wrap .sup-meta-wrap .sup-description {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footerTitle-block-posabs{
     width: 100%;
@@ -3294,9 +3306,6 @@ ul.contact-info2 i.fa {
   }
   .single-pricing-2 .plan-name {
     font-size: 18px;
-  }
-  .sup-desc-wrap .sup-meta-wrap .sup-description {
-    display: none;
   }
   .portfolio-meta ul li span {
     font-size: 10px;
@@ -3588,6 +3597,11 @@ ul.contact-info2 i.fa {
 @media (max-width: 544px){
       .footerTitle-block-posabs{
     display: none !important;
+  }
+}
+@include breakpoint(543){
+    .sup-desc-wrap .sup-meta-wrap .sup-description {
+    display: block;
   }
 }
 /* Tablets */
